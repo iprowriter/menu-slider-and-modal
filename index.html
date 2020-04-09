@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Slider and Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="user" />
+
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+        <header>
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <h1>Leipzig Moving Services</h1>
+            <p>Need help with moving in Leipzig? We are here for you </p>
+            <button class="cta-btn" id="open">Sign Up Now!</button>
+        </header>
+     <div class="container">
+         <h2>Do you have questions about moving to Leipzig?</h2>
+         <p>We provide a wholistic services when it comes to living your
+             dream of moving to Leipzig.
+         </p>
+         <p>We provide information and services to make your move easier</p>
+
+         <h2>How much do we charge?</h2>
+         <p>We provide customized payment plan to ensure you don't pay more than you should</p>
+
+         <h2>Benefits of our services?</h2>
+         <ul>
+             <li>Reliable information</li>
+             <li>Customized services</li>
+             <li>24/7 access to our services</li>
+             <li>Live customer support</li>
+             <li>Someone on ground to welcome you when you arrive in Leipzig</li>
+            
+         </ul>
+         <p>If you have more questions, don't hestitate to contact us immediately</p>
+
+     </div>
+
+     <!--Modal --  a model can be put anywhere in html-->
+     <div class="modal-container" id="modal">
+         <div class="modal">
+             <button class="close-btn" id="close">
+                 <i class="fa fa-times"></i>
+             </button>
+             <div class="modal-header">
+                 <h3>Sign Up</h3>
+             </div>
+             <div class="modal-content">
+                 <p>Register with us to get offers, support, and more</p>
+                 <form class="modal-form">
+                     <div>
+                         <lable for="name">Name</lable>
+                         <input type="text" class="form-input" id="name" placeholder="Enter Name">
+                     </div>
+                     <div>
+                        <lable for="email">Email</lable>
+                        <input type="email" class="form-input" id="email" placeholder="Enter valid email address">
+                    </div>
+                    <div>
+                        <lable for="password">Password</lable>
+                        <input type="password" class="form-input" id="password" placeholder="Enter valid password">
+                    </div>
+                    <div>
+                        <lable for="password2">Confirm Password</lable>
+                        <input type="text" class="form-input" id="password2" placeholder="Please confirm password">
+                        
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                 </form>
+             </div>
+         </div>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
